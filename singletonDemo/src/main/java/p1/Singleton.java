@@ -1,7 +1,7 @@
 package p1;
 
 /*
- * µ¥ÀıÄ£Ê½
+ * å•ä¾‹æ¨¡å¼
  * 
  * 
  * */
@@ -10,11 +10,11 @@ public class Singleton
 {
           private static Singleton instance;
           
-          //Í¬²½Ëø¶ÔÏó
+          //åŒæ­¥é”å¯¹è±¡
           private static Object lock=new Object();
           
           
-          //¹¹ÔìÆ÷Ë½ÓĞ»¯£¬Ê¹ÊµÀı»¯Ê±Ö»ÄÜÔÚ±¾ÀàÖĞ½øĞĞ£¬Íâ²¿²»¿ÉÒÔnew¶ÔÏó
+          //æ„é€ å™¨ç§æœ‰åŒ–ï¼Œä½¿å®ä¾‹åŒ–æ—¶åªèƒ½åœ¨æœ¬ç±»ä¸­è¿›è¡Œï¼Œå¤–éƒ¨ä¸å¯ä»¥newå¯¹è±¡
           private Singleton()
           {
         	  
@@ -24,6 +24,7 @@ public class Singleton
           {
         	  if(instance==null)
         	  {
+			  //å¤šçº¿ç¨‹æ—¶ä¿è¯çº¿ç¨‹å®‰å…¨
         		  synchronized (lock)
         		  {
 					   if(instance==null)
